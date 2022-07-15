@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.FilmEinladungsdetailController">
+   <children>
+      <Label fx:id="label_einladung" layoutX="384.0" layoutY="57.0" text="Einladung ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_zurueck" layoutX="29.0" layoutY="31.0" mnemonicParsing="false" onAction="#switchToFilmeinladung" text="Zurück" />
+      <Button fx:id="button_akzeptieren" layoutX="780.0" layoutY="548.0" mnemonicParsing="false" onAction="#akzeptiereFilmeinladung" text="Akzeptieren" />
+      <Label fx:id="label_absender" layoutX="82.0" layoutY="186.0" prefHeight="7.0" prefWidth="62.0" text="Absender" />
+      <Label fx:id="label_datum" layoutX="82.0" layoutY="232.0" prefHeight="7.0" prefWidth="62.0" text="Datum" />
+      <Label fx:id="label_uhrzeit" layoutX="486.0" layoutY="232.0" prefHeight="7.0" prefWidth="62.0" text="Uhrzeit" />
+      <TextField fx:id="textField_filmname" layoutX="182.0" layoutY="136.0" prefHeight="26.0" prefWidth="230.0" />
+      <TextField fx:id="textField_uhrzeit" layoutX="566.0" layoutY="227.0" prefHeight="26.0" prefWidth="230.0" />
+      <Label fx:id="label_kommentar" layoutX="82.0" layoutY="300.0" prefHeight="18.0" prefWidth="69.0" text="Kommentar" />
+      <TextArea fx:id="textArea_kommentar" layoutX="182.0" layoutY="300.0" prefHeight="200.0" prefWidth="630.0" />
+      <Label fx:id="label_filmname" layoutX="82.0" layoutY="140.0" prefHeight="7.0" prefWidth="62.0" text="Filmname" />
+      <TextField fx:id="textField_absender" layoutX="182.0" layoutY="182.0" prefHeight="26.0" prefWidth="230.0" />
+      <TextField fx:id="textField_datum" layoutX="182.0" layoutY="227.0" prefHeight="26.0" prefWidth="230.0" />
+      <Button fx:id="button_ablehnen" layoutX="780.0" layoutY="594.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Ablehnen" onAction="#filmeinladungAblehnen" />
+      <Label fx:id="label_akzeptiert" layoutX="500.0" layoutY="552.0" prefHeight="17.0" prefWidth="269.0" />
+      <Label fx:id="label_abgelehnt" layoutX="503.0" layoutY="598.0" prefHeight="17.0" prefWidth="269.0" />
+   </children>
+</AnchorPane>

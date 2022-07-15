@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.NutzersucheController">
+   <children>
+      <TableView fx:id="tableView_nutzer" layoutX="52.0" layoutY="156.0" prefHeight="396.0" prefWidth="408.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_vorname" prefWidth="211.0" text="Vorname" />
+          <TableColumn fx:id="tableColumn_nachname" prefWidth="196.0" text="Nachname" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_zurueck" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToNutzerstartseite" text="Zurück" />
+      <Button fx:id="button_alle" layoutX="52.0" layoutY="89.0" mnemonicParsing="false" onAction="#zeigeAlleNutzerAn" text="Alle" />
+      <Button fx:id="button_meineFreunde" layoutX="112.0" layoutY="89.0" mnemonicParsing="false" onAction="#zeigeAlleFreundeAn" text="Meine Freunde" />
+      <TextField fx:id="textField_vorname" layoutX="498.0" layoutY="187.0" prefHeight="27.0" prefWidth="278.0" />
+      <TextField fx:id="textField_nachname" layoutX="498.0" layoutY="273.0" prefHeight="27.0" prefWidth="278.0" />
+      <Button fx:id="button_suchen" layoutX="716.0" layoutY="341.0" mnemonicParsing="false" onAction="#suche" text="Suchen" />
+      <Label fx:id="label_vorname" layoutX="498.0" layoutY="156.0" text="Vorname" />
+      <Label fx:id="label_nachname" layoutX="498.0" layoutY="247.0" text="Nachname" />
+      <Label fx:id="label_filter" layoutX="57.0" layoutY="127.0" prefHeight="19.0" prefWidth="105.0" text="Alle" />
+   </children>
+</AnchorPane>

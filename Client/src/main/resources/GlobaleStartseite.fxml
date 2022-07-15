@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="bodybg" stylesheets="@HintergrundStartseite.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.GlobaleStartseiteController">
+   <children>
+      <Text fill="RED" layoutX="339.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTFLIX" textAlignment="CENTER" wrappingWidth="204.08984375">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+      <Button fx:id="button_login_admin" layoutX="23.0" layoutY="488.0" mnemonicParsing="false" onAction="#loginPressed_admin" text="Admin-Login" />
+      <Button fx:id="button_registrierung_admin" layoutX="23.0" layoutY="537.0" mnemonicParsing="false" onAction="#registerPressed_admin" text="Admin-Registrierung" />
+      <Button fx:id="button_login_nutzer" layoutX="781.0" layoutY="488.0" mnemonicParsing="false" onAction="#loginPressed_nutzer" text="Nutzer-Login" />
+      <Button fx:id="button_registrierung_nutzer" layoutX="736.0" layoutY="537.0" mnemonicParsing="false" onAction="#registerPressed_nutzer" text="Nutzer-Registrierung" />
+   </children>
+</AnchorPane>

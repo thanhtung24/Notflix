@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.FilmuebersichtController">
+   <children>
+      <Button fx:id="button_zurueck" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToFilmliste" text="Zurück" />
+      <Button fx:id="button_bearbeiten" layoutX="161.0" layoutY="393.0" mnemonicParsing="false" onAction="#filmBearbeiten" text="Bearbeiten" />
+      <TextField fx:id="text_name" layoutX="429.0" layoutY="128.0" />
+      <TextField fx:id="text_kategorie" layoutX="429.0" layoutY="166.0" />
+      <TextField fx:id="text_filmlaenge" layoutX="429.0" layoutY="203.0" />
+      <TextField fx:id="text_regisseur" layoutX="429.0" layoutY="280.0" />
+      <TextField fx:id="text_drehbuchautor" layoutX="429.0" layoutY="318.0" />
+      <Text fx:id="name" layoutX="285.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="kategorie" layoutX="286.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kategorie">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="filmlaenge" layoutX="286.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filmlänge">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="erscheinungsdatum" layoutX="285.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Erscheinungsdatum">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="regisseur" layoutX="286.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisseur">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="drehbuchautor" layoutX="285.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drehbuchautor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="RED" layoutX="58.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notflix" wrappingWidth="248.375">
+         <font>
+            <Font name="Tw Cen MT" size="48.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image" fitHeight="233.0" fitWidth="200.0" layoutX="41.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tableView_cast" layoutX="654.0" layoutY="125.0" prefHeight="255.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_vorname" prefWidth="101.0" text="Vorname" />
+            <TableColumn fx:id="tableColumn_nachname" prefWidth="98.0" text="Nachname" />
+        </columns>
+      </TableView>
+      <Text fx:id="cast" layoutX="654.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cast">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textField_erscheinungsdatum" layoutX="429.0" layoutY="242.0" />
+      <Button fx:id="button_statsitik" layoutX="160.0" layoutY="428.0" mnemonicParsing="false" onAction="#statistikOeffnen" prefHeight="26.0" prefWidth="74.0" text="Statistik" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.FilmManuellAnlegenUndBearbeitenController">
+   <children>
+      <Button fx:id="button_zurueck" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#betaetigeZurueckButton" text="Zurück">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="label_filmManuellAnlegen" layoutX="279.0" layoutY="20.0" text="Film manuell anlegen">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_name" layoutX="160.0" layoutY="154.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="label_kategorie" layoutX="163.0" layoutY="197.0" text="Kategorie">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="label_filmLaenge" layoutX="163.0" layoutY="248.0" text="Filmlänge">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="label_erscheinungsdatum" layoutX="162.0" layoutY="288.0" text="Erscheinungsdatum">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="label_regisseur" layoutX="163.0" layoutY="333.0" text="Regisseur">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="label_drehbuchautor" layoutX="163.0" layoutY="380.0" text="Drehbuchautor">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="label_cast" layoutX="166.0" layoutY="425.0" text="Cast">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="label_filmbanner" layoutX="166.0" layoutY="472.0" text="Filmbanner">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="textfield_name" layoutX="327.0" layoutY="149.0" prefHeight="35.0" prefWidth="238.0" />
+      <ComboBox fx:id="combobox_kategorie" layoutX="327.0" layoutY="192.0" prefHeight="35.0" prefWidth="139.0" />
+      <TextField fx:id="textfield_filmlaenge" layoutX="327.0" layoutY="243.0" prefHeight="35.0" prefWidth="238.0" />
+      <DatePicker fx:id="datePicker_erscheinungsdatum" layoutX="327.0" layoutY="283.0" prefHeight="35.0" prefWidth="238.0" />
+      <Button fx:id="button_filmAnlegen" layoutX="352.0" layoutY="530.0" mnemonicParsing="false" onAction="#filmAnlegen" text="Film anlegen" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <TextField fx:id="bildNameTextField" editable="false" layoutX="327.0" layoutY="467.0" prefHeight="35.0" prefWidth="238.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="button_folder" layoutX="601.0" layoutY="467.0" mnemonicParsing="false" onAction="#filmBannerHochladen" text="Folder">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label fx:id="label_benachrichtigung" layoutX="501.0" layoutY="538.0" prefHeight="19.0" prefWidth="320.0" />
+      <ComboBox fx:id="comboBox_regisseur" layoutX="327.0" layoutY="328.0" prefHeight="35.0" prefWidth="238.0" />
+      <ComboBox fx:id="comboBox_drehbuchautor" layoutX="327.0" layoutY="375.0" prefHeight="35.0" prefWidth="238.0" />
+      <CheckComboBox fx:id="comboBox_cast" layoutX="327.0" layoutY="420.0" prefHeight="35.0" prefWidth="238.0" />
+      <Button fx:id="button_personAnlegen" layoutX="661.0" layoutY="377.0" mnemonicParsing="false" onAction="#switchToPersonAnlegen" prefHeight="56.0" prefWidth="139.0" text="Person anlegen">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="label_filmLaengeHinweis" layoutX="574.0" layoutY="252.0" text="Bitte in Minuten: z.B. 120 min" textFill="#686868" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.BewertungsdetailsController">
+   <children>
+      <TextArea fx:id="textarea_kommentar" layoutX="293.0" layoutY="244.0" prefHeight="281.0" prefWidth="503.0" />
+      <Label fx:id="label_bewertungZuFilm" layoutX="293.0" layoutY="176.0" prefHeight="37.0" prefWidth="137.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_filmname" layoutX="293.0" layoutY="116.0" prefHeight="37.0" prefWidth="409.0" text="Bewertung zu Iron Man 3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView_profilbild" fitHeight="145.0" fitWidth="137.0" layoutX="55.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="button_profilOeffnen" layoutX="55.0" layoutY="287.0" mnemonicParsing="false" onAction="#profilOeffnen" text="Profil öffnen" />
+      <Button fx:id="button_zurueck" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#zurueckZurFilmbewertung" text="Zurück" />
+   </children>
+</AnchorPane>

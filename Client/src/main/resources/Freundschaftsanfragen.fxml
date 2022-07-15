@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.FreundschaftsanfrageController">
+   <children>
+      <Label fx:id="label_freundschaftsanfragen" layoutX="265.0" layoutY="67.0" text="Freundschaftsanfragen">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView_nuzter" layoutX="206.0" layoutY="138.0" prefHeight="324.0" prefWidth="488.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_vorname" prefWidth="243.0" text="Vorname" />
+          <TableColumn fx:id="tableColumn_nachname" prefWidth="244.0" text="Nachname" />
+        </columns>
+      </TableView>
+      <Button fx:id="button_startseite" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToNutzerstartseite" text="Startseite" />
+   </children>
+</AnchorPane>

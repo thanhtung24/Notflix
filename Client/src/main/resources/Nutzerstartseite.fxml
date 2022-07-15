@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.NutzerstartseiteController">
+   <children>
+      <Button fx:id="button_abmelden" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#betaetigeAbmelden" text="Abmelden" />
+      <Label fx:id="label_notflix" layoutX="383.0" layoutY="11.0" prefHeight="50.0" prefWidth="135.0" text="Notflix" textFill="RED">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview_filmliste" layoutX="13.0" layoutY="254.0" prefHeight="359.0" prefWidth="875.0">
+        <columns>
+          <TableColumn fx:id="column_filmName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="column_kategorie" prefWidth="75.0" text="Kategorie" />
+            <TableColumn fx:id="column_filmlaenge" prefWidth="75.0" text="Filmlänge" />
+            <TableColumn fx:id="column_erscheinungsdatum" prefWidth="171.20004272460938" text="Erscheinungsdatum" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="textfield_name" layoutX="37.0" layoutY="126.0" prefHeight="26.0" prefWidth="318.0" promptText="Suche nach Name..." />
+      <TextField fx:id="textfield_cast" layoutX="37.0" layoutY="175.0" prefHeight="26.0" prefWidth="318.0" promptText="Suche nach Cast..." />
+      <MenuBar fx:id="menuBar_nutzerstartseite" layoutX="14.0" layoutY="78.0" prefHeight="27.0" prefWidth="875.0">
+         <menus>
+            <Menu fx:id="menu_meinedaten" mnemonicParsing="false" text="Meine Daten">
+              <items>
+                <MenuItem fx:id="menuItem_meinedaten" mnemonicParsing="false" onAction="#betaetigeMeineDaten" text="Meine Daten" />
+                  <MenuItem fx:id="menuItem_meineStatistiken" mnemonicParsing="false" onAction="#betaetigeMeineStatistiken" text="Meine Statistiken" />
+                  <MenuItem fx:id="menuItem_Kalender" mnemonicParsing="false" onAction="#betaetigeKalender" text="Kalender" />
+              </items>
+            </Menu>
+            <Menu fx:id="menu_andereNutzer" mnemonicParsing="false" text="Andere Nutzer">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#betaetigeAndereNutzer" text="Andere Nutzer" />
+              </items>
+            </Menu>
+            <Menu fx:id="menu_anfragen" mnemonicParsing="false" text="Anfragen">
+              <items>
+                <MenuItem fx:id="menuItem_freundschaftsanfragen" mnemonicParsing="false" onAction="#betaetigeFreundschaftsanfragen" text="Freundschaftsanfragen" />
+                  <MenuItem fx:id="menuItem_einladungen" mnemonicParsing="false" onAction="#betaetigeEingegangeneFilmeinladungen" text="Einladungen zu Filmen" />
+              </items>
+            </Menu>
+            <Menu fx:id="menu_diskussionsgruppen" mnemonicParsing="false" text="Diskussionsgruppen">
+              <items>
+                <MenuItem fx:id="menuItem_diskussionsgruppen" mnemonicParsing="false" onAction="#diskussionsgruppenSeite" text="Diskussionsgruppen" />
+              </items>
+            </Menu>
+            <Menu fx:id="menu_einstellung" mnemonicParsing="false" text="Einstellung">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#betaetigeEinstellung" text=" Einstellung" />
+               </items></Menu>
+            <Menu fx:id="menu_report" mnemonicParsing="false" text="Report">
+              <items>
+                <MenuItem fx:id="menuItem_report" mnemonicParsing="false" onAction="#betaetigeReport" text="Report" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="button_suchen" layoutX="707.0" layoutY="218.0" mnemonicParsing="false" onAction="#filmeSuchenUndFiltern" text="Suchen" />
+      <ComboBox fx:id="combobox_kategorie" layoutX="656.0" layoutY="126.0" prefHeight="27.0" prefWidth="189.0" />
+      <Label fx:id="label_kategorie" layoutX="496.0" layoutY="126.0" prefHeight="27.0" prefWidth="61.0" text="Kategorie" />
+      <Label fx:id="label_erscheinungsdatum" layoutX="496.0" layoutY="175.0" prefHeight="27.0" prefWidth="119.0" text="Erscheinungsdatum" />
+      <DatePicker fx:id="datePicker_erscheinungsdatum" layoutX="656.0" layoutY="175.0" />
+      <Button fx:id="button_reset" layoutX="783.0" layoutY="218.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+      <Button fx:id="button_alle" layoutX="14.0" layoutY="218.0" mnemonicParsing="false" onAction="#zeigeAlleFilmeAn" text="Alle" />
+      <Button fx:id="button_fuer_mich" layoutX="57.0" layoutY="218.0" mnemonicParsing="false" onAction="#zeigeFilmVorschlaegeAn" text="Für mich" />
+   </children>
+</AnchorPane>

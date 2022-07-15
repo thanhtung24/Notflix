@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.ZweiFaktorNutzerLoginController">
+   <children>
+      <Label layoutX="155.0" layoutY="36.0" text="Zwei-Faktor-Authentifizierung">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="168.0" text="Sicherheitscode" />
+      <TextField fx:id="text_code" layoutX="261.0" layoutY="163.0" prefHeight="27.0" prefWidth="292.0" />
+      <Label layoutX="261.0" layoutY="191.0" prefHeight="19.0" prefWidth="300.0" text="Entnehmen Sie den Sicherheitscode aus der E-Mail" />
+      <Button fx:id="button_erneuteMail" layoutX="178.0" layoutY="267.0" mnemonicParsing="false" onAction="#erneuterVersuch" prefHeight="27.0" prefWidth="404.0" text="Keine E-Mail erhalten? Klicken Sie für einen erneuten Versuch.  " />
+      <Button fx:id="button_absenden" layoutX="464.0" layoutY="358.0" mnemonicParsing="false" onAction="#absenden" text="Absenden" />
+      <Button fx:id="button_zurueck" layoutX="26.0" layoutY="41.0" mnemonicParsing="false" onAction="#zurueck" text="Zurück" />
+      <Text fx:id="text_status" layoutX="261.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="84.0" />
+   </children>
+</AnchorPane>

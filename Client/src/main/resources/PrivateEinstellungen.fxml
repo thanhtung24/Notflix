@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.PrivateEinstellungenController">
+   <children>
+      <Label fx:id="label_titel" layoutX="95.0" layoutY="90.0" text="Einstelltungen zu privaten Daten">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_frage" layoutX="95.0" layoutY="156.0" text="Wer darf Deine Daten ansehen?">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_watchlist" layoutX="95.0" layoutY="218.0" text="Watchlist">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_geseheneFilmeListe" layoutX="95.0" layoutY="266.0" text="Liste gesehener Filme">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_freundeListe" layoutX="95.0" layoutY="317.0" text="Freundesliste">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_bewertungen" layoutX="95.0" layoutY="365.0" text="Bewertungen">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBox_watchlist" layoutX="436.0" layoutY="217.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBox_geseheneFilmeListe" layoutX="436.0" layoutY="265.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBox_freundeListe" layoutX="436.0" layoutY="316.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBox_bewertungen" layoutX="436.0" layoutY="364.0" prefWidth="150.0" />
+      <Button fx:id="button_speichern" layoutX="511.0" layoutY="440.0" mnemonicParsing="false" onAction="#speichereEinstellungen" text="Speichern" />
+      <Button fx:id="button_zurueck" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToStartseite" text="Zurück" />
+      <Label fx:id="label_benachrichtigung" layoutX="614.0" layoutY="444.0" prefHeight="19.0" prefWidth="247.0" />
+   </children>
+</AnchorPane>

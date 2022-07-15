@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.NutzerEinloggenController">
+   <children>
+      <Label layoutX="411.0" layoutY="54.0" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="196.0" text="E-Mail" />
+      <Label layoutX="94.0" layoutY="244.0" text="Passwort" />
+      <TextField fx:id="text_email" layoutX="292.0" layoutY="192.0" prefHeight="26.0" prefWidth="326.0" />
+      <PasswordField fx:id="text_passwort" layoutX="292.0" layoutY="240.0" prefHeight="26.0" prefWidth="326.0" />
+      <Button fx:id="button_einloggen" layoutX="757.0" layoutY="543.0" mnemonicParsing="false" onAction="#einloggen" text="Einloggen" />
+      <Label layoutX="94.0" layoutY="118.0" prefHeight="18.0" prefWidth="415.0" />
+      <Button fx:id="button_zurueck" layoutX="48.0" layoutY="59.0" mnemonicParsing="false" onAction="#zurueck" text="Zurück zur Startseite" />
+      <Label fx:id="antwort" layoutX="292.0" layoutY="326.0" prefHeight="18.0" prefWidth="326.0" />
+   </children>
+</AnchorPane>

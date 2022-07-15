@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.ProfilAndererNutzerController">
+   <children>
+      <Label fx:id="label_profil" layoutX="253.0" layoutY="26.0" text="Profil">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_vorname" layoutX="59.0" layoutY="250.0" text="Vorname" />
+      <Label fx:id="label_nachname" layoutX="55.0" layoutY="298.0" text="Nachname" />
+      <TextField fx:id="textField_vorname" layoutX="171.0" layoutY="246.0" prefHeight="26.0" prefWidth="238.0" />
+      <TextField fx:id="textField_nachname" layoutX="171.0" layoutY="294.0" prefHeight="26.0" prefWidth="238.0" />
+      <ImageView fx:id="profildbild" fitHeight="130.0" fitWidth="130.0" layoutX="216.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@OhneProfilbild.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_senden" layoutX="39.0" layoutY="416.0" mnemonicParsing="false" onAction="#sendOrAcceptRequest" text="Freundschaftsanfrage senden" />
+      <Button fx:id="button_startseite" layoutX="17.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToStartseite" prefHeight="27.0" prefWidth="76.0" text="Startseite" />
+      <Label fx:id="label_freunde" alignment="CENTER" contentDisplay="CENTER" layoutX="464.0" layoutY="52.0" prefHeight="19.0" prefWidth="415.0" text="Freunde" />
+      <Label fx:id="label_watchlist" alignment="CENTER" contentDisplay="CENTER" layoutX="465.0" layoutY="311.0" prefHeight="19.0" prefWidth="200.0" text="Watchlist" />
+      <Label fx:id="label_bereitsgesehen" alignment="CENTER" contentDisplay="CENTER" layoutX="676.0" layoutY="311.0" prefHeight="19.0" prefWidth="200.0" text="Bereits gesehen" />
+      <TableView fx:id="tableView_watchlist" layoutX="461.0" layoutY="329.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="tableColumn_watchlist_filmname" prefWidth="75.0" text="Filmname" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="tableView_bereitsgesehen" layoutX="678.0" layoutY="329.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="tableColumn_bereitsgesehen_filmname" prefWidth="75.0" text="Filmname" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TableView fx:id="tableView_freunde" layoutX="461.0" layoutY="76.0" prefHeight="200.0" prefWidth="415.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_vorname" prefWidth="75.0" text="Vorname" />
+          <TableColumn fx:id="tableColumn_nachname" prefWidth="75.0" text="Nachname" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="button_nachrichtSchreiben" layoutX="280.0" layoutY="416.0" mnemonicParsing="false" onAction="#switchToChat" text="Nachricht schreiben" />
+      <Button fx:id="button_freundschaftsanfragen" layoutX="18.0" layoutY="82.0" mnemonicParsing="false" onAction="#switchToFreundschaftsanfragen" prefHeight="27.0" prefWidth="151.0" text="Freundschaftsanfragen" />
+      <Label fx:id="label_benachrichtigung" layoutX="40.0" layoutY="380.0" prefHeight="19.0" prefWidth="302.0" />
+      <Button fx:id="button_nutzersuche" layoutX="18.0" layoutY="48.0" mnemonicParsing="false" onAction="#switchToNutzersuche" text="Nutzersuche" />
+   </children>
+</AnchorPane>

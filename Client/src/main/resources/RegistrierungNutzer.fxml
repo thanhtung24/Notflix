@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.RegistrierungNutzerController">
+   <children>
+      <Label layoutX="332.0" layoutY="39.0" text="Registrierung ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_zurueck" layoutX="54.0" layoutY="44.0" mnemonicParsing="false" onAction="#zurueck" text="Zurück zur Startseite " />
+      <TextField fx:id="text_vorname" layoutX="278.0" layoutY="151.0" prefHeight="26.0" prefWidth="294.0" />
+      <Label layoutX="109.0" layoutY="156.0" text="Vorname" />
+      <Label layoutX="112.0" layoutY="207.0" text="Nachname" />
+      <TextField fx:id="text_nachname" layoutX="278.0" layoutY="202.0" prefHeight="26.0" prefWidth="294.0" />
+      <Label layoutX="112.0" layoutY="274.0" prefHeight="26.0" prefWidth="91.0" text="Geburtsdatum " />
+      <DatePicker fx:id="datepicker_geburtsdatum" layoutX="278.0" layoutY="274.0" prefHeight="26.0" prefWidth="162.0" />
+      <Label layoutX="112.0" layoutY="336.0" prefHeight="26.0" prefWidth="80.0" text="E-Mail" />
+      <TextField fx:id="text_email" layoutX="278.0" layoutY="336.0" prefHeight="26.0" prefWidth="294.0" />
+      <Label layoutX="112.0" layoutY="394.0" prefHeight="26.0" prefWidth="80.0" text="Passwort" />
+      <PasswordField fx:id="text_passwort" layoutX="278.0" layoutY="394.0" prefHeight="26.0" prefWidth="294.0" />
+      <Label layoutX="112.0" layoutY="437.0" prefHeight="26.0" prefWidth="126.0" text="Passwort bestätigen " />
+      <PasswordField fx:id="text_passwortBestaetigen" layoutX="278.0" layoutY="437.0" prefHeight="26.0" prefWidth="294.0" />
+      <Button fx:id="button_absenden" layoutX="673.0" layoutY="542.0" mnemonicParsing="false" onAction="#absenden" prefHeight="26.0" prefWidth="162.0" text="Absenden" />
+      <Label fx:id="label_nachricht" layoutX="54.0" layoutY="99.0" prefHeight="18.0" prefWidth="278.0" />
+      <Label fx:id="label_warnung" layoutX="611.0" layoutY="441.0" prefHeight="18.0" prefWidth="206.0" />
+      <ImageView fx:id="imageView_profil" fitHeight="150.0" fitWidth="200.0" layoutX="673.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@OhneProfilbild.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_bearbeiten" layoutX="748.0" layoutY="189.0" mnemonicParsing="false" onAction="#bearbeiten" text="Bearbeiten" />
+   </children>
+</AnchorPane>
